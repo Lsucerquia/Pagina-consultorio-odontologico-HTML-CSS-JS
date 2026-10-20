@@ -1,0 +1,28 @@
+/* ==========================================================
+   OdontoVita - Estilos propios
+   Los demás estilos vienen de las clases de Tailwind (ver
+   js/tailwind-config.js para la paleta, tipografía y espacios).
+   ========================================================== */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overscroll-behavior: none;
+}
+
+main > :first-child {
+  margin-top: 0 !important;
+}
+
+main > :last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Oculta la barra de desplazamiento manteniendo el scroll */
+::-webkit-scrollbar {
+  display: none;
+}

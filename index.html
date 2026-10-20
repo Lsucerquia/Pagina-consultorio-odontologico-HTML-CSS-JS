@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OdontoVita | Consultorio Odontológico</title>
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
+    rel="stylesheet" />
+
+  <!-- Tailwind (CDN) y su configuración -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind-config.js"></script>
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="bg-background font-body-md text-on-background">
+
+  <!-- ===================== ENCABEZADO ===================== -->
+  <header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(14,75,130,0.06)]">
+    <div
+      class="h-20 max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex items-center justify-between gap-gutter">
+      <div class="flex items-center gap-space-sm">
+        <img alt="OdontoVita Logo" class="h-8 w-auto object-contain"
+          src="https://lh3.googleusercontent.com/aida/AEtjO1Wvf0-a0I4V0VShHjNKhB-Zj9ur2rqDcXQrY58XChN9JrmoScDhZ2k6pJ-QMfsgQPz7uCeXgpEZ6mdEA2-rXifeFyahVlo0oYaZUxHQzdy7w8ArrzE6WZUmdXFEcl4HRfLrEe3rwV8RaV8AUfsdDiVlleihGflUX1BhJb8UiHeB3pj34rxB5n09osr-0iWGGY6WCxK5yACjr48OC5LlP3NlfrMQTW4MkqDsGBLnL3jC3_ZWfKRYzqUP2UAg" />
+        <span class="font-headline-sm text-headline-sm text-primary tracking-tight">OdontoVita</span>
+      </div>
+
+      <nav class="hidden lg:flex items-center gap-space-md" aria-label="Navegación principal">
+        <a aria-current="page"
+          class="px-space-sm py-space-xs transition-colors bg-surface-container-highest text-primary font-bold rounded-lg"
+          href="#">Home</a>
+        <a class="px-space-sm py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors"
+          href="#servicios">Servicios</a>
+        <a class="px-space-sm py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors"
+          href="#testimonios">Testimonios</a>
+        <a class="px-space-sm py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors"
+          href="#contacto">Contacto</a>
+        <a class="px-space-sm py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors"
+          href="#gestionar-citas">Gestionar Citas</a>
+      </nav>
+
+      <div class="flex items-center gap-space-md">
+        <a class="hidden sm:inline-flex items-center justify-center bg-primary-container text-on-primary font-label-lg text-label-lg px-space-md py-space-sm rounded-lg hover:bg-primary transition-all shadow-[0_4px_20px_-2px_rgba(14,75,130,0.15)]"
+          href="#">Panel Odontólogo</a>
+        <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
+          <span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="w-full pt-20 bg-background">
+    <div class="flex flex-col w-full">
+
+      <!-- ===================== HERO ===================== -->
+      <section class="relative overflow-hidden bg-surface py-space-xl lg:py-28">
+        <div
+          class="absolute -top-32 -left-20 w-96 h-96 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none">
+        </div>
+        <div
+          class="absolute top-1/2 -right-24 w-80 h-80 rounded-full bg-surface-container-highest/40 blur-3xl pointer-events-none">
+        </div>
+
+        <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin relative z-10">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+
+            <!-- Texto -->
+            <div class="lg:col-span-7 space-y-space-md">
+              <div
+                class="inline-flex items-center gap-space-xs bg-surface-container-lowest px-space-md py-space-xs rounded-full shadow-sm text-secondary">
+                <span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+                <span class="font-label-md text-label-md uppercase tracking-wider font-bold">Clínica Odontológica
+                  Certificada • Cero Registros</span>
+              </div>
+
+              <h1 class="font-display-lg text-display-lg text-primary tracking-tight font-extrabold max-w-2xl">
+                Sonrisas saludables, atención cercana y profesional.
+              </h1>
+
+              <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+                Experimenta una odontología humana y sin dolor. Nuestro consultorio integra escáneres intraorales 3D y
+                tecnología de vanguardia, permitiéndote agendar en segundos sin contraseñas ni registros previos.
+              </p>
+
+              <div class="flex flex-wrap items-center gap-space-md pt-space-sm">
+                <a class="inline-flex items-center justify-center gap-space-xs bg-secondary hover:bg-secondary/90 text-on-secondary font-label-lg text-label-lg px-8 py-3.5 rounded-lg shadow-md hover:shadow-lg transition-all duration-200"
+                  href="#gestionar-citas">
+                  <span class="material-symbols-outlined text-[20px]">calendar_month</span>
+                  AGENDAR CITA AHORA
+                </a>
+                <a class="inline-flex items-center justify-center gap-space-xs bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg px-7 py-3.5 rounded-lg shadow-sm hover:shadow transition-all duration-200"
+                  href="#servicios">
+                  <span class="material-symbols-outlined text-[20px]">medical_services</span>
+                  Ver Servicios
+                </a>
+              </div>
+
+              <!-- Métricas de confianza -->
+              <div class="grid grid-cols-3 gap-space-sm pt-space-lg max-w-lg">
+                <div class="p-space-sm bg-surface-container-lowest rounded-xl shadow-sm text-center md:text-left">
+                  <p class="font-headline-lg text-headline-lg text-primary font-bold tracking-tight">+1,500</p>
+                  <p class="font-label-sm text-label-sm text-on-surface-variant uppercase">Pacientes felices</p>
+                </div>
+                <div class="p-space-sm bg-surface-container-lowest rounded-xl shadow-sm text-center md:text-left">
+                  <p class="font-headline-lg text-headline-lg text-secondary font-bold tracking-tight">99%</p>
+                  <p class="font-label-sm text-label-sm text-on-surface-variant uppercase">Satisfacción clínica</p>
+                </div>
+                <div class="p-space-sm bg-surface-container-lowest rounded-xl shadow-sm text-center md:text-left">
+                  <p class="font-headline-lg text-headline-lg text-primary font-bold tracking-tight">100%</p>
+                  <p class="font-label-sm text-label-sm text-on-surface-variant uppercase">Especialistas cert.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Imagen -->
+            <div class="lg:col-span-5 relative mt-space-lg lg:mt-0">
+              <div class="relative mx-auto max-w-md lg:max-w-none">
+                <div class="rounded-2xl overflow-hidden shadow-xl bg-surface-container-lowest p-2">
+                  <img class="w-full h-[430px] object-cover rounded-xl"
+                    alt="Odontóloga sonriendo en un consultorio dental moderno"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbvCwdYrsYYvCF0FGuG0Q1IHKX_vLROe4qp1IPTE4UItjxK7Kf1scM0p0LX3RbYhx-p6IAg16r4fUmeof0AgNoNPyXlmZJFRjHUfwJaoleFxhFW9j4xlac6sBsr1RlPKusYOhQAfbEGfNmlEgz-AUQy3ExKN2bnuw2kspkwty6z2oJaWvUlFi5taXdH56E8TXimvKgZ9aT-YdAobzyaJ9U52edEvZzZN5DOUsA16prY6ToOvEDOO8mhA" />
+                </div>
+
+                <div
+                  class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-space-md rounded-xl shadow-xl flex items-center gap-space-sm max-w-xs">
+                  <div class="w-12 h-12 rounded-lg bg-secondary/15 flex items-center justify-center text-secondary">
+                    <span class="material-symbols-outlined text-[26px]">sanitizer</span>
+                  </div>
+                  <div>
+                    <p class="font-headline-sm text-headline-sm text-on-surface font-semibold">Bioseguridad Grado A</p>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">Esterilización hospitalaria certificada
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="absolute -top-4 -right-4 bg-primary-container text-on-primary px-space-md py-space-xs rounded-full shadow-lg flex items-center gap-space-xs">
+                  <span class="material-symbols-outlined text-[18px]">verified</span>
+                  <span class="font-label-sm text-label-sm font-semibold tracking-wide">Tecnología 3D Digital</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== SERVICIOS ===================== -->
+      <section class="py-space-xl bg-surface-container-low" id="servicios">
+        <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin space-y-space-xl">
+          <div class="text-center max-w-2xl mx-auto space-y-space-xs">
+            <span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold">Atención
+              Integral Especializada</span>
+            <h2 class="font-headline-xl text-headline-xl text-primary font-bold">Catálogo de Servicios Clínicos</h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant">Tratamientos diseñados a tu medida con
+              aparatología de última generación y anestesia computarizada indolora.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+
+            <!-- Servicio 1 -->
+            <div
+              class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+              <div class="space-y-space-md">
+                <div class="flex items-center justify-between">
+                  <div
+                    class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+                    <span class="material-symbols-outlined text-[28px]">dentistry</span>
+                  </div>
+                  <span
+                    class="bg-secondary/15 text-secondary font-label-sm text-label-sm px-space-sm py-1 rounded-full font-bold">Profilaxis
+                    Ultrasonido</span>
+                </div>
+                <div class="space-y-space-xs">
+                  <h3 class="font-headline-sm text-headline-sm text-primary font-bold">Odontología General &amp;
+                    Limpieza</h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Remoción minuciosa de cálculo y placa bacteriana mediante ultrasonido indoloro. Diagnóstico precoz
+                    con radiovisiógrafo digital para proteger la vitalidad de tus piezas.
+                  </p>
+                </div>
+              </div>
+              <div class="pt-space-md mt-space-md flex items-center justify-between">
+                <span class="font-label-md text-label-md text-secondary font-semibold">Sesión de 45 min</span>
+                <a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-secondary font-bold"
+                  href="#gestionar-citas" onclick="seleccionarServicio('Odontología General &amp; Limpieza Profunda')">
+                  Solicitar este servicio <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Servicio 2 -->
+            <div
+              class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+              <div class="space-y-space-md">
+                <div class="flex items-center justify-between">
+                  <div
+                    class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+                    <span class="material-symbols-outlined text-[28px]">align_items_stretch</span>
+                  </div>
+                  <span
+                    class="bg-secondary/15 text-secondary font-label-sm text-label-sm px-space-sm py-1 rounded-full font-bold">Alineadores
+                    &amp; Brackets</span>
+                </div>
+                <div class="space-y-space-xs">
+                  <h3 class="font-headline-sm text-headline-sm text-primary font-bold">Ortodoncia Invisible &amp;
+                    Tradicional</h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Alineación precisa y discreta mediante férulas termoformadas transparentes o brackets cerámicos de
+                    autoligado rápido que corrigen la mordida con comodidad.
+                  </p>
+                </div>
+              </div>
+              <div class="pt-space-md mt-space-md flex items-center justify-between">
+                <span class="font-label-md text-label-md text-secondary font-semibold">Plan personalizado</span>
+                <a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-secondary font-bold"
+                  href="#gestionar-citas" onclick="seleccionarServicio('Ortodoncia Invisible &amp; Tradicional')">
+                  Solicitar este servicio <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Servicio 3 -->
+            <div
+              class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+              <div class="space-y-space-md">
+                <div class="flex items-center justify-between">
+                  <div
+                    class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+                    <span class="material-symbols-outlined text-[28px]">auto_fix_high</span>
+                  </div>
+                  <span
+                    class="bg-secondary/15 text-secondary font-label-sm text-label-sm px-space-sm py-1 rounded-full font-bold">Estética
+                    Avanzada</span>
+                </div>
+                <div class="space-y-space-xs">
+                  <h3 class="font-headline-sm text-headline-sm text-primary font-bold">Diseño de Sonrisa &amp;
+                    Blanqueamiento</h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Lentes cerámicos mínimamente invasivos y aclaramiento dental con luz fría LED que rejuvenece la
+                    tonalidad natural de tu esmalte sin generar hipersensibilidad.
+                  </p>
+                </div>
+              </div>
+              <div class="pt-space-md mt-space-md flex items-center justify-between">
+                <span class="font-label-md text-label-md text-secondary font-semibold">Tono radiante</span>
+                <a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-secondary font-bold"
+                  href="#gestionar-citas" onclick="seleccionarServicio('Diseño de Sonrisa &amp; Blanqueamiento LED')">
+                  Solicitar este servicio <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Servicio 4 -->
+            <div
+              class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+              <div class="space-y-space-md">
+                <div class="flex items-center justify-between">
+                  <div
+                    class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+                    <span class="material-symbols-outlined text-[28px]">hardware</span>
+                  </div>
+                  <span
+                    class="bg-secondary/15 text-secondary font-label-sm text-label-sm px-space-sm py-1 rounded-full font-bold">Titanio
+                    Quirúrgico</span>
+                </div>
+                <div class="space-y-space-xs">
+                  <h3 class="font-headline-sm text-headline-sm text-primary font-bold">Implantes Dentales &amp;
+                    Rehabilitación</h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Recuperación total de la función masticatoria y estética. Raíces de titanio biocompatible de
+                    osteointegración guiada por tomografía computarizada 3D.
+                  </p>
+                </div>
+              </div>
+              <div class="pt-space-md mt-space-md flex items-center justify-between">
+                <span class="font-label-md text-label-md text-secondary font-semibold">Garantía clínica</span>
+                <a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-secondary font-bold"
+                  href="#gestionar-citas" onclick="seleccionarServicio('Implantes Dentales &amp; Rehabilitación Oral')">
+                  Solicitar este servicio <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Servicio 5 -->
+            <div
+              class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+              <div class="space-y-space-md">
+                <div class="flex items-center justify-between">
+                  <div
+                    class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+                    <span class="material-symbols-outlined text-[28px]">healing</span>
+                  </div>
+                  <span
+                    class="bg-secondary/15 text-secondary font-label-sm text-label-sm px-space-sm py-1 rounded-full font-bold">Sistemas
+                    Rotatorios</span>
+                </div>
+                <div class="space-y-space-xs">
+                  <h3 class="font-headline-sm text-headline-sm text-primary font-bold">Endodoncia sin Dolor</h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Salvamos tus piezas dentales con desinfección termomecánica de conductos radiculares. Tratamiento
+                    seguro, rápido y 100% indoloro en una sola sesión.
+                  </p>
+                </div>
+              </div>
+              <div class="pt-space-md mt-space-md flex items-center justify-between">
+                <span class="font-label-md text-label-md text-secondary font-semibold">Alivio inmediato</span>
+                <a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-secondary font-bold"
+                  href="#gestionar-citas" onclick="seleccionarServicio('Endodoncia sin dolor')">
+                  Solicitar este servicio <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Servicio 6 -->
+            <div
+              class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+              <div class="space-y-space-md">
+                <div class="flex items-center justify-between">
+                  <div
+                    class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+                    <span class="material-symbols-outlined text-[28px]">child_care</span>
+                  </div>
+                  <span
+                    class="bg-secondary/15 text-secondary font-label-sm text-label-sm px-space-sm py-1 rounded-full font-bold">Enfoque
+                    Lúdico</span>
+                </div>
+                <div class="space-y-space-xs">
+                  <h3 class="font-headline-sm text-headline-sm text-primary font-bold">Odontopediatría Integral</h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Cuidado cariñoso, pedagógico y libre de temores para niños y adolescentes. Sellantes preventivos,
+                    fluorización de remineralización y educación de hábitos saludables.
+                  </p>
+                </div>
+              </div>
+              <div class="pt-space-md mt-space-md flex items-center justify-between">
+                <span class="font-label-md text-label-md text-secondary font-semibold">Cuidado infantil</span>
+                <a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-secondary font-bold"
+                  href="#gestionar-citas" onclick="seleccionarServicio('Odontopediatría')">
+                  Solicitar este servicio <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== TESTIMONIOS ===================== -->
+      <section class="py-space-xl bg-surface" id="testimonios">
+        <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin space-y-space-xl">
+          <div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-space-md">
+            <div>
+              <span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold">Experiencias
+                Comprobadas</span>
+              <h2 class="font-headline-xl text-headline-xl text-primary font-bold">Lo que dicen nuestros pacientes</h2>
+            </div>
+            <div
+              class="flex items-center gap-space-xs text-secondary bg-surface-container-lowest px-space-md py-space-xs rounded-full shadow-sm">
+              <div class="flex text-amber-500">
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+              <span class="font-label-md text-label-md font-bold text-on-surface">4.9 / 5.0 en Google Reviews</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+
+            <!-- Testimonio 1 -->
+            <div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col justify-between">
+              <div class="space-y-space-sm">
+                <div class="flex text-amber-500">
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                </div>
+                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed italic">
+                  "Siempre le tuve pánico al dentista, pero aquí la endodoncia fue totalmente indolora. Lo mejor es que
+                  solicité mi cita desde el celular en un minuto sin tener que crear contraseñas absurdas."
+                </p>
+              </div>
+              <div class="pt-space-md mt-space-md border-t border-surface-container flex items-center gap-space-sm">
+                <div
+                  class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold font-label-md">
+                  MR</div>
+                <div>
+                  <p class="font-label-lg text-label-lg font-bold text-primary">Mauricio Restrepo</p>
+                  <p class="font-label-sm text-label-sm text-secondary">Tratamiento de Endodoncia</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonio 2 -->
+            <div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col justify-between">
+              <div class="space-y-space-sm">
+                <div class="flex text-amber-500">
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                </div>
+                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed italic">
+                  "Puntualidad británica. Llegué a mi hora y me atendieron de inmediato. Mi diseño de sonrisa con
+                  carillas quedó extremadamente natural. La clínica transmite una paz increíble."
+                </p>
+              </div>
+              <div class="pt-space-md mt-space-md border-t border-surface-container flex items-center gap-space-sm">
+                <div
+                  class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold font-label-md">
+                  CV</div>
+                <div>
+                  <p class="font-label-lg text-label-lg font-bold text-primary">Camila Valenzuela</p>
+                  <p class="font-label-sm text-label-sm text-secondary">Diseño de Sonrisa Cerámica</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonio 3 -->
+            <div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col justify-between">
+              <div class="space-y-space-sm">
+                <div class="flex text-amber-500">
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                </div>
+                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed italic">
+                  "Tuve que reprogramar mi cita de ortodoncia por un viaje de trabajo y pude hacerlo directamente desde
+                  la web ingresando solo mi cédula y celular. Cero burocracia, 10 de 10."
+                </p>
+              </div>
+              <div class="pt-space-md mt-space-md border-t border-surface-container flex items-center gap-space-sm">
+                <div
+                  class="w-10 h-10 rounded-full bg-surface-container-highest text-primary flex items-center justify-center font-bold font-label-md">
+                  AF</div>
+                <div>
+                  <p class="font-label-lg text-label-lg font-bold text-primary">Andrés Felipe Gómez</p>
+                  <p class="font-label-sm text-label-sm text-secondary">Ortodoncia Invisible</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonio 4 -->
+            <div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col justify-between">
+              <div class="space-y-space-sm">
+                <div class="flex text-amber-500">
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                </div>
+                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed italic">
+                  "Me colocaron dos implantes dentales y la recuperación fue impecable. Todo el personal te explica paso
+                  a paso con imágenes tomográficas claras antes de tocar tu boca."
+                </p>
+              </div>
+              <div class="pt-space-md mt-space-md border-t border-surface-container flex items-center gap-space-sm">
+                <div
+                  class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold font-label-md">
+                  SG</div>
+                <div>
+                  <p class="font-label-lg text-label-lg font-bold text-primary">Sonia Guisao</p>
+                  <p class="font-label-sm text-label-sm text-secondary">Rehabilitación con Implantes</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== GESTIONAR CITAS ===================== -->
+      <section class="py-space-xl bg-surface-container-low" id="gestionar-citas">
+        <div class="max-w-[1080px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin space-y-space-lg">
+          <div class="text-center space-y-space-xs">
+            <span
+              class="bg-secondary/15 text-secondary font-label-sm text-label-sm px-space-md py-1 rounded-full font-bold uppercase tracking-wider">
+              Autoservicio Seguro Sin Contraseñas
+            </span>
+            <h2 class="font-headline-xl text-headline-xl text-primary font-bold">Portal del Paciente: Gestionar Citas
+            </h2>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">
+              Solicita o consulta el estado de tu atención dental en cualquier instante usando únicamente tu documento
+              de identidad y tu número móvil.
+            </p>
+          </div>
+
+          <!-- Pestañas -->
+          <div class="bg-surface-container p-1.5 rounded-xl flex max-w-md mx-auto shadow-inner">
+            <button
+              class="flex-1 py-space-sm px-space-md rounded-lg font-label-md text-label-md transition-all font-bold bg-surface-container-lowest text-primary shadow-sm flex items-center justify-center gap-space-xs"
+              id="tab-nueva-btn" onclick="toggleTabs('nueva')">
+              <span class="material-symbols-outlined text-[18px]">add_circle</span>
+              Solicitar Nueva Cita
+            </button>
+            <button
+              class="flex-1 py-space-sm px-space-md rounded-lg font-label-md text-label-md transition-all font-medium text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-space-xs"
+              id="tab-consultar-btn" onclick="toggleTabs('consultar')">
+              <span class="material-symbols-outlined text-[18px]">manage_search</span>
+              Consultar / Modificar Cita
+            </button>
+          </div>
+
+          <!-- Panel 1: Solicitar nueva cita -->
+          <div class="bg-surface-container-lowest rounded-2xl p-space-lg md:p-space-xl shadow-md transition-all"
+            id="panel-nueva-cita">
+            <form class="space-y-space-md" id="form-nueva-cita" onsubmit="handleNuevaCita(event)">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+
+                <div class="space-y-1">
+                  <label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[16px] text-secondary">person</span>
+                    Nombre Completo *
+                  </label>
+                  <input
+                    class="w-full bg-surface-container-low rounded-lg px-4 py-3 text-on-surface font-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all"
+                    placeholder="Ej. Diana Marcela Torres" required type="text" />
+                </div>
+
+                <div class="space-y-1">
+                  <label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[16px] text-secondary">badge</span>
+                    Cédula de Ciudadanía (CC) *
+                  </label>
+                  <input
+                    class="w-full bg-surface-container-low rounded-lg px-4 py-3 text-on-surface font-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all"
+                    placeholder="Ej. 1020304050" required type="text" />
+                </div>
+
+                <div class="space-y-1">
+                  <label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[16px] text-secondary">call</span>
+                    Teléfono Celular (WhatsApp) *
+                  </label>
+                  <input
+                    class="w-full bg-surface-container-low rounded-lg px-4 py-3 text-on-surface font-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all"
+                    placeholder="Ej. 310 987 6543" required type="tel" />
+                </div>
+
+                <div class="space-y-1">
+                  <label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[16px] text-secondary">dentistry</span>
+                    Servicio Odontológico Requerido *
+                  </label>
+                  <select
+                    class="w-full bg-surface-container-low rounded-lg px-4 py-3 text-on-surface font-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all"
+                    id="servicio-select" required>
+                    <option value="">Selecciona un tratamiento...</option>
+                    <option value="Odontología General &amp; Limpieza Profunda">Odontología General &amp; Limpieza
+                      Profunda</option>
+                    <option value="Ortodoncia Invisible &amp; Tradicional">Ortodoncia Invisible &amp; Tradicional
+                    </option>
+                    <option value="Diseño de Sonrisa &amp; Blanqueamiento LED">Diseño de Sonrisa &amp; Blanqueamiento
+                      LED</option>
+                    <option value="Implantes Dentales &amp; Rehabilitación Oral">Implantes Dentales &amp; Rehabilitación
+                      Oral</option>
+                    <option value="Endodoncia sin dolor">Endodoncia sin dolor (Conductos)</option>
+                    <option value="Odontopediatría">Odontopediatría (Cuidado Infantil)</option>
+                    <option value="Valoración Inicial Diagnóstica">Valoración Inicial Diagnóstica General</option>
+                  </select>
+                </div>
+
+                <div class="space-y-1">
+                  <label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[16px] text-secondary">event</span>
+                    Fecha Preferida *
+                  </label>
+                  <input
+                    class="w-full bg-surface-container-low rounded-lg px-4 py-3 text-on-surface font-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all"
+                    required type="date" />
+                </div>
+
+                <div class="space-y-1">
+                  <label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[16px] text-secondary">schedule</span>
+                    Horario Preferido *
+                  </label>
+                  <select
+                    class="w-full bg-surface-container-low rounded-lg px-4 py-3 text-on-surface font-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all"
+                    required>
+                    <option value="">Selecciona la franja horaria...</option>
+                    <option value="Mañana (08:00 AM - 11:30 AM)">Mañana (08:00 AM - 11:30 AM)</option>
+                    <option value="Mediodía (11:30 AM - 02:00 PM)">Mediodía (11:30 AM - 02:00 PM)</option>
+                    <option value="Tarde (02:00 PM - 05:00 PM)">Tarde (02:00 PM - 05:00 PM)</option>
+                    <option value="Final de la Tarde (05:00 PM - 07:00 PM)">Final de la Tarde (05:00 PM - 07:00 PM)
+                    </option>
+                  </select>
+                </div>
+
+              </div>
+
+              <!-- Autorización de datos -->
+              <div class="pt-space-xs flex items-start gap-space-xs">
+                <input class="mt-1 w-4 h-4 rounded text-secondary focus:ring-secondary" id="acepta-datos" required
+                  type="checkbox" />
+                <label class="font-body-sm text-body-sm text-on-surface-variant" for="acepta-datos">
+                  Acepto expresamente la <a class="text-secondary font-semibold hover:underline"
+                    href="#habeas-data">política de tratamiento de datos personales</a> y autorizo la comunicación
+                  clínica y recordatorios vía WhatsApp / SMS conforme a la Ley 1581.
+                </label>
+              </div>
+
+              <div class="pt-space-sm">
+                <button
+                  class="w-full bg-secondary hover:bg-secondary/90 text-on-secondary font-label-lg text-label-lg py-4 rounded-xl shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-space-xs font-bold uppercase tracking-wider"
+                  type="submit">
+                  <span class="material-symbols-outlined text-[22px]">check_circle</span>
+                  CONFIRMAR SOLICITUD DE CITA
+                </button>
+              </div>
+            </form>
+
+            <!-- Mensaje de éxito -->
+            <div
+              class="hidden mt-space-md p-space-md bg-secondary/15 rounded-xl text-secondary flex items-center gap-space-sm"
+              id="msg-exito-reserva">
+              <span class="material-symbols-outlined text-[28px]">mark_email_read</span>
+              <div>
+                <p class="font-headline-sm text-headline-sm font-bold">¡Solicitud recibida con éxito!</p>
+                <p class="font-body-sm text-body-sm text-on-surface">Nuestro equipo asistencial validó tu solicitud.
+                  Recibirás de inmediato un mensaje a tu WhatsApp con la confirmación de agenda.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 2: Consultar / actualizar / cancelar -->
+          <div
+            class="hidden bg-surface-container-lowest rounded-2xl p-space-lg md:p-space-xl shadow-md transition-all space-y-space-lg"
+            id="panel-consultar-cita">
+            <form class="space-y-space-md" onsubmit="handleBuscarCita(event)">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+                <div class="space-y-1">
+                  <label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[16px] text-secondary">badge</span>
+                    Ingresa tu Cédula (CC)
+                  </label>
+                  <input
+                    class="w-full bg-surface-container-low rounded-lg px-4 py-3 text-on-surface font-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all"
+                    id="busqueda-cc" placeholder="Ej. 1020304050" required type="text" />
+                </div>
+                <div class="space-y-1">
+                  <label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[16px] text-secondary">phone_iphone</span>
+                    Teléfono Celular Registrado
+                  </label>
+                  <input
+                    class="w-full bg-surface-container-low rounded-lg px-4 py-3 text-on-surface font-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all"
+                    id="busqueda-tel" placeholder="Ej. 310 987 6543" required type="tel" />
+                </div>
+              </div>
+              <button
+                class="w-full bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg py-3 rounded-lg shadow-sm transition-all flex items-center justify-center gap-space-xs font-bold"
+                type="submit">
+                <span class="material-symbols-outlined text-[20px]">search</span>
+                Buscar mi cita agendada
+              </button>
+            </form>
+
+            <!-- Resultado (simulado) -->
+            <div class="p-space-lg bg-surface-container-low rounded-xl space-y-space-md" id="resultado-cita">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+                <div class="flex items-center gap-space-xs">
+                  <span class="material-symbols-outlined text-secondary text-[24px]">event_available</span>
+                  <span class="font-headline-sm text-headline-sm text-primary font-bold">Detalle de tu Cita
+                    Odontológica</span>
+                </div>
+                <span
+                  class="bg-secondary/20 text-secondary px-space-md py-1 rounded-full font-label-sm text-label-sm font-bold uppercase tracking-wider self-start sm:self-auto"
+                  id="badge-estado">
+                  Confirmada
+                </span>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-space-md pt-space-xs">
+                <div>
+                  <p class="font-label-sm text-label-sm text-on-surface-variant uppercase">Paciente</p>
+                  <p class="font-label-lg text-label-lg font-bold text-on-surface">Carlos Eduardo M.</p>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">CC: 1020***050</p>
+                </div>
+                <div>
+                  <p class="font-label-sm text-label-sm text-on-surface-variant uppercase">Especialista</p>
+                  <p class="font-label-lg text-label-lg font-bold text-on-surface">Dra. Valeria Duque</p>
+                  <p class="font-body-sm text-body-sm text-secondary">Ortodoncista Líder</p>
+                </div>
+                <div>
+                  <p class="font-label-sm text-label-sm text-on-surface-variant uppercase">Tratamiento</p>
+                  <p class="font-label-lg text-label-lg font-bold text-on-surface">Control de Ortodoncia</p>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Consultorio 602</p>
+                </div>
+                <div>
+                  <p class="font-label-sm text-label-sm text-on-surface-variant uppercase">Fecha &amp; Hora</p>
+                  <p class="font-label-lg text-label-lg font-bold text-primary" id="cita-fecha-hora">Jueves, 24 Oct -
+                    10:00 AM</p>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Duración: 45 min</p>
+                </div>
+              </div>
+
+              <div class="pt-space-sm flex flex-wrap items-center gap-space-sm">
+                <button
+                  class="inline-flex items-center gap-space-xs bg-surface-container-lowest hover:bg-surface-container text-primary font-label-md text-label-md px-space-md py-2.5 rounded-lg shadow-sm transition-all font-semibold"
+                  onclick="reprogramarCita()">
+                  <span class="material-symbols-outlined text-[18px]">update</span>
+                  Reprogramar Fecha/Hora
+                </button>
+                <button
+                  class="inline-flex items-center gap-space-xs bg-error-container hover:bg-error text-on-error font-label-md text-label-md px-space-md py-2.5 rounded-lg transition-all font-semibold"
+                  onclick="cancelarCita()">
+                  <span class="material-symbols-outlined text-[18px]">cancel</span>
+                  Cancelar Cita
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================== CONTACTO ===================== -->
+      <section class="py-space-xl bg-surface" id="contacto">
+        <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin space-y-space-xl">
+          <div class="text-center max-w-2xl mx-auto space-y-space-xs">
+            <span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold">Encuéntranos
+              Fácilmente</span>
+            <h2 class="font-headline-xl text-headline-xl text-primary font-bold">Ubicación &amp; Atención Personalizada
+            </h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant">Estamos convenientemente ubicados con
+              estacionamiento privado para pacientes y acceso inclusivo.</p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+
+            <!-- Información -->
+            <div class="lg:col-span-5 space-y-space-md flex flex-col justify-between">
+              <div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex items-start gap-space-md">
+                <div
+                  class="w-12 h-12 rounded-xl bg-secondary/15 flex items-center justify-center text-secondary shrink-0">
+                  <span class="material-symbols-outlined text-[26px]">alarm</span>
+                </div>
+                <div class="space-y-1">
+                  <h3 class="font-headline-sm text-headline-sm text-primary font-bold">Horarios de Atención</h3>
+                  <p class="font-body-md text-body-md text-on-surface"><span class="font-bold">Lunes a Viernes:</span>
+                    8:00 AM – 7:00 PM</p>
+                  <p class="font-body-md text-body-md text-on-surface"><span class="font-bold">Sábados:</span> 8:00 AM –
+                    2:00 PM</p>
+                  <p class="font-body-sm text-body-sm text-secondary font-semibold">Domingos y Festivos: Guardia para
+                    Urgencias</p>
+                </div>
+              </div>
+
+              <div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex items-start gap-space-md">
+                <div
+                  class="w-12 h-12 rounded-xl bg-primary-container/15 flex items-center justify-center text-primary shrink-0">
+                  <span class="material-symbols-outlined text-[26px]">pin_drop</span>
+                </div>
+                <div class="space-y-1">
+                  <h3 class="font-headline-sm text-headline-sm text-primary font-bold">Dirección del Consultorio</h3>
+                  <p class="font-body-md text-body-md text-on-surface font-semibold">Av. Las Américas 450, Edificio
+                    Médico Horizonte</p>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Piso 6, Consultorio 602 (Frente a la
+                    estación central de metro/transmilenio)</p>
+                </div>
+              </div>
+
+              <div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm space-y-space-sm">
+                <div class="flex items-center gap-space-sm">
+                  <div
+                    class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined text-[20px]">deskphone</span>
+                  </div>
+                  <div>
+                    <p class="font-label-sm text-label-sm text-on-surface-variant">Línea Telefónica Directa</p>
+                    <p class="font-headline-sm text-headline-sm text-primary font-bold">+57 (601) 789 2345</p>
+                  </div>
+                </div>
+                <a class="w-full bg-secondary hover:bg-secondary/90 text-on-secondary font-label-lg text-label-lg py-3.5 px-space-md rounded-xl shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-space-xs font-bold"
+                  href="https://wa.me/573001234567?text=Hola%20OdontoVita,%20deseo%20información%20sobre%20una%20cita%20odontológica"
+                  rel="noopener noreferrer" target="_blank">
+                  <span class="material-symbols-outlined text-[22px]">chat</span>
+                  Chatear por WhatsApp Inmediato
+                </a>
+              </div>
+            </div>
+
+            <!-- Mapa -->
+            <div class="lg:col-span-7 flex flex-col">
+              <div
+                class="w-full h-full min-h-[380px] rounded-2xl overflow-hidden shadow-sm relative bg-surface-container flex flex-col justify-between p-space-md">
+                <div class="absolute inset-0 w-full h-full bg-cover bg-center"
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB_QYud-Wz_lPGmNCGYiZb6S0xHjzq5Re2fTa2MYlkJHuDipTNoScjw0eb96-PQztoMV2Ip0QCNe2LdhbYjIhBjIvrNYP6HjvkjP7_M42GGRQSrFBEQJvDfLgfNa6NEK6HOZT3GFdqAYGEZ1xG_Pg1UAbB2F-tZsGG_p1PEthMq0FpbCkEpYzD7MNZuPU3fZjGLnr5JgA0YooG696qPsDyBL8nkhGP50CKZnH9y5793Vmcx5xKLzxdSjw')">
+                  <div class="absolute inset-0 bg-primary/20 backdrop-blur-[1px]"></div>
+                </div>
+
+                <div class="relative z-10 flex justify-between items-start">
+                  <div
+                    class="bg-surface-container-lowest/90 backdrop-blur-md px-space-md py-space-xs rounded-xl shadow-md">
+                    <span class="font-label-md text-label-md font-bold text-primary flex items-center gap-1">
+                      <span class="material-symbols-outlined text-[18px] text-secondary">location_on</span>
+                      OdontoVita Consultorio 602
+                    </span>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">Parqueadero de visitantes subterráneo
+                      disponible</p>
+                  </div>
+                  <span
+                    class="bg-secondary text-on-secondary font-label-sm text-label-sm px-space-sm py-1 rounded-full font-bold">Abierto
+                    Ahora</span>
+                </div>
+
+                <div class="relative z-10 self-end">
+                  <a class="inline-flex items-center gap-1 bg-surface-container-lowest px-space-md py-2 rounded-lg font-label-md text-label-md font-bold text-primary shadow-lg hover:bg-surface-container transition-colors"
+                    href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+                    Abrir en Google Maps <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== TRATAMIENTO DE DATOS ===================== -->
+      <section class="py-space-lg bg-surface-container-low border-t border-surface-container" id="habeas-data">
+        <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+          <div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm space-y-space-xs">
+            <div class="flex items-center gap-space-xs text-primary">
+              <span class="material-symbols-outlined text-[22px] text-secondary">verified_user</span>
+              <h3 class="font-headline-sm text-headline-sm font-bold">Cumplimiento Normativo &amp; Tratamiento de Datos
+                Personales en Salud</h3>
+            </div>
+            <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed text-justify">
+              En cumplimiento de la Ley Estatutaria 1581 de 2012, el Decreto 1377 de 2013 y normatividad sanitaria de
+              historia clínica (Resolución 1995 de 1999), <strong>OdontoVita Consultorio Odontológico</strong> le
+              informa que los datos personales, clínicos y de contacto suministrados en este sitio web serán tratados de
+              manera confidencial y con estrictos estándares de bioseguridad informática. La información recopilada en
+              los formularios de agendamiento se utiliza exclusivamente para: coordinación de citas odontológicas,
+              confirmaciones, recordatorios de prevención, seguimiento de tratamientos y facturación. El paciente o su
+              acudiente legal podrá ejercer en todo momento sus derechos a conocer, actualizar, rectificar o solicitar
+              la supresión de sus datos mediante el correo oficial: <span
+                class="text-primary font-semibold">privacidad@odontovita.com</span>.
+            </p>
+            <div
+              class="pt-space-xs flex flex-wrap items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant">
+              <span>• Registro Nacional de Bases de Datos Activo</span>
+              <span>• Protocolo Cero Almacenamiento Inseguro</span>
+              <span>• Certificación de Secreto Profesional Médico</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ===================== PIE DE PÁGINA ===================== -->
+  <footer class="w-full bg-primary-container text-on-primary">
+    <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin pt-space-xl pb-space-lg">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-xl">
+
+        <div class="space-y-space-md">
+          <div class="flex items-center gap-space-sm">
+            <span class="font-headline-md text-headline-md font-bold tracking-tight text-surface">OdontoVita</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">Excelencia clínica
+            odontológica, tecnología de punta y calidez humana dedicada a tu salud y armonía bucodental.</p>
+          <div
+            class="inline-flex items-center gap-space-xs bg-secondary/30 px-space-sm py-space-xs rounded-full text-secondary-fixed">
+            <span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+            <span class="font-label-sm text-label-sm">Atención Integral Activa</span>
+          </div>
+        </div>
+
+        <div class="space-y-space-sm">
+          <h3 class="font-headline-sm text-headline-sm text-surface font-semibold">Canales Directos</h3>
+          <ul class="space-y-space-xs font-body-sm text-body-sm text-on-primary-container">
+            <li>Av. Las Américas 450, Consultorio 602</li>
+            <li>Lunes a Sábado: 8:00 AM - 7:00 PM</li>
+            <li>Tel: +57 (601) 789 2345</li>
+            <li>contacto@odontovita.com</li>
+          </ul>
+        </div>
+
+        <div class="space-y-space-sm">
+          <h3 class="font-headline-sm text-headline-sm text-surface font-semibold">Contacto y Chat</h3>
+          <p class="font-body-sm text-body-sm text-on-primary-container">Agenda y consultas inmediatas con el equipo
+            clínico vía WhatsApp:</p>
+          <a class="inline-flex items-center gap-space-xs bg-secondary text-on-secondary font-label-md text-label-md px-space-md py-space-sm rounded-lg hover:bg-on-secondary-container transition-colors"
+            href="https://wa.me/573001234567" rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-[18px]">chat</span>WhatsApp OdontoVita
+          </a>
+        </div>
+
+        <div class="space-y-space-sm">
+          <h3 class="font-headline-sm text-headline-sm text-surface font-semibold">Navegación</h3>
+          <ul class="space-y-space-xs font-body-sm text-body-sm text-on-primary-container">
+            <li><a class="hover:text-surface transition-colors" href="#servicios">Servicios Dentales</a></li>
+            <li><a class="hover:text-surface transition-colors" href="#gestionar-citas">Reserva y Modificación de
+                Citas</a></li>
+            <li><a class="hover:text-surface transition-colors" href="#testimonios">Opiniones de Pacientes</a></li>
+            <li><a class="hover:text-surface transition-colors" href="#habeas-data">Tratamiento de Datos Personales</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div
+        class="pt-space-md border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-on-primary-container">
+        <p>© 2024 OdontoVita Consultorio Odontológico. Todos los derechos reservados.</p>
+        <div class="flex items-center gap-space-md">
+          <a class="hover:text-surface transition-colors" href="#habeas-data">Aviso Legal &amp; Privacidad</a>
+          <a class="hover:text-surface transition-colors" href="#">Acceso Especialistas</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lógica de la página -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
